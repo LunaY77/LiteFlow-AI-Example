@@ -36,6 +36,31 @@ LiteFlow-AI 是一个基于 LiteFlow 框架开发的插件模块，故引入 Lit
 </dependencies>
 ```
 
+## 参数配置
+
+需要在 `src/main/resources/application.yaml` 中配置 LiteFlow-AI 相关配置信息：
+
+```yaml
+liteflow:
+  rule-source: flow.el.xml
+  ai:
+    enable: true
+    base-packages: com.example.demo.node # 你的AI组件所在的包路径
+```
+
+如果你使用的是 DashScope 模型 或者 OpenAI 输出格式的模型，还需要配置 DashScope 或 OpenAI 的 API Key：
+
+```yaml
+liteflow:
+  ai:
+    dashscope:
+      api-key: your-dashscope-api-key
+    openai:
+      api-key: your-openai-api-key
+```
+
+---
+
 ## 组价介绍
 
 LiteFlow-AI 中创建一个 AI 组件通过定义一个**接口类 + 注解**的方式来实现, 有如下的组织结构：
@@ -270,4 +295,7 @@ class ProductAnalysis {
 
 -----
 
+## HelloWorld To LiteFlow-AI
+
+[HelloWorld To LiteFlow-AI](liteflow-ai-helloworld/README.md)
 
