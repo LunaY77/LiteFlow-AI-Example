@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: @spring.profiles.active@
+  application:
+    name: liteflow-ai-helloworld
+
+liteflow:
+  rule-source: flow.el.xml
+  ai:
+    enable: true
+    base-packages: com.lunay.liteflow.ai.helloworld.node
+    dashscope:
+      apikey: ${helloworld.dashscope.apikey:your-dashscope-api-key-here}
