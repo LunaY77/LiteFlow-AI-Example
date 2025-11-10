@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: @spring.profiles.active@
+  application:
+    name: liteflow-ai-chat-history
+
+liteflow:
+  rule-source: flow/flow.xml
+  ai:
+    enable: true
+    base-packages: com.lunay.liteflow.ai.history.node
+    dashscope:
+      apikey: ${history.dashscope.apikey:your-dashscope-api-key-here}
