@@ -23,22 +23,17 @@ import com.yomahub.liteflow.ai.engine.model.output.ResponseType;
         apiUrl = "https://dashscope.aliyuncs.com/compatible-mode/v1",
         model = "qwen-flash",
         // 关闭思考
-        enableThinking = true,
+        enableThinking = false,
         // 开启请求和响应日志记录
         logRequests = true,
         logResponses = true
 )
 @AIChat(
-        // 使用动态输入的方式，获取用户输入的问题
-        userPrompt = "{{userQuery}}",
-        // 设置输出为流式，传输模式为 SSE
-        streaming = true,
-        transportType = TransportType.SSE
-)
-@AIInput(
-        mapping = {
-                @InputField(name = "userQuery", expression = "dataMap.userQuery", defaultValue = "你好，请介绍一下 LiteFlow 框架"),
-        }
+        userPrompt = "请你在 users 表中查找 id 为 123的用户，确定其存在后，再删除该用户。",
+        // 设置输出为非流式，传输模式为 HTTP
+        streaming = false,
+        transportType = TransportType.HTTP,
+        toolNames = {"mysql_select_tool", "mysql_delete_tool"}
 )
 @AIOutput(
         // 设置响应类型为文本，模型节点输出将为框架定义的 AssistantMessage 对象

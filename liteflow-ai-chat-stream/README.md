@@ -278,7 +278,7 @@ curl -N -G \
 
 最终你会在shell看到类似如下的流式输出：
 
-```text
+```shell
 data:[START]
 
 data:[Thinking]
@@ -294,7 +294,7 @@ data:[Thinking] 让我介绍一下LiteFlow
 
 同时控制台也打印出了请求和响应的日志，方便调试和查看交互内容。
 
-```text
+```shell
 ...INFO 15051 --- [liteflow-ai-chat-stream] [] c.y.l.a.e.i.transport.impl.SseTransport  : ====== SSE Request Start ======
 ...INFO 15051 --- [liteflow-ai-chat-stream] [] c.y.l.a.e.i.transport.impl.SseTransport  : URL: https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
 ...INFO 15051 --- [liteflow-ai-chat-stream] [] c.y.l.a.e.i.transport.impl.SseTransport  : Headers: {Authorization=Bearer your-api-key-here}
@@ -313,7 +313,7 @@ data:[Thinking] 让我介绍一下LiteFlow
 ...INFO 15051 --- [liteflow-ai-chat-stream] [] c.y.l.a.e.i.transport.impl.SseTransport  : ======= SSE Request End =======
 ```
 
-```text
+```shell
 2025-11-10T15:52:50.864+08:00  INFO 15051 --- [liteflow-ai-chat-stream] [liyuncs.com/...] c.y.l.a.e.i.transport.impl.SseTransport  : SSE Response Event - id: null, type: null, data: {"choices":[{"delta":{"content":null,"role":"assistant","reasoning_content":""},"index":0,"logprobs":null,"finish_reason":null}],"object":"chat.completion.chunk","usage":null,"created":1762761171,"system_fingerprint":null,"model":"qwen-flash","id":"chatcmpl-2de807f0-b6fc-46ee-bbfc-1085505d7030"}
 2025-11-10T15:52:50.871+08:00  INFO 15051 --- [liteflow-ai-chat-stream] [liyuncs.com/...] c.y.l.a.e.i.transport.impl.SseTransport  : SSE Response Event - id: null, type: null, data: {"choices":[{"finish_reason":null,"logprobs":null,"delta":{"content":null,"reasoning_content":"嗯"},"index":0}],"object":"chat.completion.chunk","usage":null,"created":1762761171,"system_fingerprint":null,"model":"qwen-flash","id":"chatcmpl-2de807f0-b6fc-46ee-bbfc-1085505d7030"}
 2025-11-10T15:52:50.872+08:00  INFO 15051 --- [liteflow-ai-chat-stream] [liyuncs.com/...] c.y.l.a.e.i.transport.impl.SseTransport  : SSE Response Event - id: null, type: null, data: {"choices":[{"delta":{"content":null,"reasoning_content":"，"},"finish_reason":null,"index":0,"logprobs":null}],"object":"chat.completion.chunk","usage":null,"created":1762761171,"system_fingerprint":null,"model":"qwen-flash","id":"chatcmpl-2de807f0-b6fc-46ee-bbfc-1085505d7030"}

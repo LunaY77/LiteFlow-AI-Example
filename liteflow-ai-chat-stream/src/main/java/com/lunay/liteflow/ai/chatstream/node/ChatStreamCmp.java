@@ -22,7 +22,7 @@ import com.yomahub.liteflow.ai.engine.model.output.ResponseType;
         provider = ProviderEnum.DASHSCOPE,
         apiUrl = "https://dashscope.aliyuncs.com/compatible-mode/v1",
         model = "qwen-flash",
-        // 关闭思考
+        // 开启思考
         enableThinking = true,
         // 开启请求和响应日志记录
         logRequests = true,
