@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: @spring.profiles.active@
+  application:
+    name: liteflow-ai-structure-output
+
+liteflow:
+  rule-source: flow/flow.xml
+  ai:
+    enable: true
+    base-packages: com.lunay.liteflow.ai.structure.node
+    dashscope:
+      apikey: ${structure.dashscope.apikey:your-dashscope-api-key-here}

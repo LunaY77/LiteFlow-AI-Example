@@ -166,11 +166,38 @@ public interface MyAICmp {}
 
 -----
 
-## HelloWorld To LiteFlow-AI
-
-[HelloWorld To LiteFlow-AI](liteflow-ai-helloworld/README.md)
-
 ## LiteFlow-AI 基本介绍
 
 [LiteFlow-AI 基本介绍](docs/1.LiteFlowAI基本介绍.md)
 
+## HelloWorld To LiteFlow-AI
+
+[HelloWorld To LiteFlow-AI](liteflow-ai-helloworld/README.md)
+
+## LiteFlow-AI 流式调用
+
+[LiteFlow-AI 流式调用](liteflow-ai-chat-stream/README.md)
+
+## LiteFlow-AI 工具调用
+
+[LiteFlow-AI 工具调用](liteflow-ai-tool-call/README.md)
+
+## LiteFlow-AI 结构化输出
+
+[LiteFlow-AI 结构化输出](liteflow-ai-structure-output/README.md)
+
+## LiteFlow-AI 多轮对话
+
+[LiteFlow-AI 多轮对话](liteflow-ai-chat-history/README.md)
+
+## LiteFlow-AI 意图识别
+
+[LiteFlow-AI 意图识别](liteflow-ai-classify/README.md)
+
+## LiteFlow-AI ReactAgent
+
+[LiteFlow-AI ReactAgent](liteflow-ai-react-agent/README.md)
+
+## LiteFlow-AI Engine 手动调用模型 
+
+[LiteFlow-AI Engine 手动调用模型](liteflow-ai-engine/README.md)
