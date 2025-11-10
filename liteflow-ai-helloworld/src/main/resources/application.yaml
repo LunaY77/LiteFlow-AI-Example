@@ -5,7 +5,7 @@ spring:
     name: liteflow-ai-helloworld
 
 liteflow:
-  rule-source: flow.el.xml
+  rule-source: flow/flow.xml
   ai:
     enable: true
     base-packages: com.lunay.liteflow.ai.helloworld.node

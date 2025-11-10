@@ -13,15 +13,15 @@
             <properties>
                 <spring.profiles.active>dev</spring.profiles.active>
             </properties>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
         </profile>
         <profile>
             <id>prod</id>
             <properties>
                 <spring.profiles.active>prod</spring.profiles.active>
             </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
         </profile>
     </profiles>
 
@@ -29,6 +29,7 @@
 
     <modules>
         <module>liteflow-ai-helloworld</module>
+        <module>liteflow-ai-chat-stream</module>
     </modules>
 
     <properties>
@@ -38,7 +39,7 @@
         <revision>2.16.0</revision>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <liteflow.version>2.15.0</liteflow.version>
+        <liteflow.version>2.15.0.2</liteflow.version>
         <springboot.version>3.2.5</springboot.version>
         <hutool.version>5.8.27</hutool.version>
         <lombok.version>1.18.32</lombok.version>

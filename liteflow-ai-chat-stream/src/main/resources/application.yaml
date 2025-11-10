@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: @spring.profiles.active@
+  application:
+    name: liteflow-ai-chat-stream
+
+liteflow:
+  rule-source: flow/flow.xml
+  ai:
+    enable: true
+    base-packages: com.lunay.liteflow.ai.chatstream.node
+    dashscope:
+      apikey: ${chatstream.dashscope.apikey:your-dashscope-api-key-here}
