@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: @spring.profiles.active@
+  application:
+    name: liteflow-ai-tool-call
+
+liteflow:
+  rule-source: flow/flow.xml
+  ai:
+    enable: true
+    base-packages: com.lunay.liteflow.ai.toolcall.node
+    dashscope:
+      apikey: ${toolcall.dashscope.apikey:your-dashscope-api-key-here}

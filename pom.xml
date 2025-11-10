@@ -30,6 +30,12 @@
     <modules>
         <module>liteflow-ai-helloworld</module>
         <module>liteflow-ai-chat-stream</module>
+        <module>liteflow-ai-tool-call</module>
+        <module>liteflow-ai-structure-output</module>
+        <module>liteflow-ai-classify</module>
+        <module>liteflow-ai-chat-history</module>
+        <module>liteflow-ai-engine</module>
+        <module>liteflow-ai-react-agent</module>
     </modules>
 
     <properties>
