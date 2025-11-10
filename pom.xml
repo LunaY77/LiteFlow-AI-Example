@@ -34,7 +34,6 @@
         <module>liteflow-ai-structure-output</module>
         <module>liteflow-ai-classify</module>
         <module>liteflow-ai-chat-history</module>
-        <module>liteflow-ai-engine</module>
         <module>liteflow-ai-react-agent</module>
     </modules>
 

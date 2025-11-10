@@ -197,7 +197,3 @@ public interface MyAICmp {}
 ## LiteFlow-AI ReactAgent
 
 [LiteFlow-AI ReactAgent](liteflow-ai-react-agent/README.md)
-
-## LiteFlow-AI Engine 手动调用模型 
-
-[LiteFlow-AI Engine 手动调用模型](liteflow-ai-engine/README.md)

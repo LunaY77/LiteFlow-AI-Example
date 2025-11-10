@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow>
+    <chain name="chain1">
+        THEN(
+            SWITCH(switchCmp).TO(java, python)
+        );
+    </chain>
+
+    <chain name="chain2">
+        THEN(
+            SWITCH(multiSwitchCmp).TO(java, python)
+        );
+    </chain>
+</flow>
